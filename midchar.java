@@ -1,14 +1,16 @@
 public class midchar {
     public static String demo(String word){
         int length = word.length();
-        String s = word.charAt((length/2)+1);
-        return s;
+        int len = length/2;
+        if(length%2 ==0)
+            return String.valueOf(word.charAt(len))+String.valueOf(word.charAt(len+1));
+        else{
+            return String.valueOf(word.charAt(len));
+        }
     }
     public static void main(String[] args) {
         String word = "real";
-        System.out.println(word[0]);
-        char f = 'd';
-        char s = 'e';
-        String str = String.valueof(f)+String.valueof(s);
+        midchar mid = new midchar(); 
+        System.out.println(mid.demo(word));
     }
 }

@@ -7,7 +7,6 @@ public class vector {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
         vector list1 = new vector();
-        list1.addelement();
         list.add(1);
         System.out.println(list);
     }
